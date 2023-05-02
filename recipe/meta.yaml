@@ -12,26 +12,26 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
+    - pip
     - python >=3.7
     - setuptools >=61.0
-    - pip
   run:
-    - python >=3.7
+    - h5py
+    - joblib
+    - matplotlib-base
     - numpy
+    - poppy
+    - pycustomfocus
+    - python >=3.7
     - scipy
     - scikit-image
     - scikit-learn
-    - matplotlib-base
-    - joblib
-    - poppy
-    - pycustomfocus
-    - tqdm
-    - h5py
     - statsmodels
+    - tqdm
 
 test:
   imports:
