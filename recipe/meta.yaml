@@ -23,6 +23,7 @@ requirements:
     - h5py
     - joblib
     - matplotlib-base
+    - matplotlib-scalebar
     - numpy
     - poppy
     - pycustomfocus
