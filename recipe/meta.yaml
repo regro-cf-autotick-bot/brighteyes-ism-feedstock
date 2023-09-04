@@ -1,5 +1,5 @@
 {% set name = "brighteyes-ism" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brighteyes-ism-{{ version }}.tar.gz
-  sha256: f615d88349ad7accc522f2bfb55bd25d94c1470916b1ba2bf2d73a4afffbf915
+  sha256: 553d3faf17c970c0f25971f8b8ec4952a6c79b79d04bfac0467f543c6fc96305
 
 build:
   noarch: python
@@ -43,12 +43,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/VicidominiLab/brighteyes-ism
+  home: https://pypi.org/project/brighteyes-ism
   summary: A toolbox for analysing and simulating ISM images
   license: GPL-3.0-or-later
   license_file: LICENSE
+  dev_url: https://github.com/VicidominiLab/brighteyes-ism
 
 extra:
   recipe-maintainers:
-    - jaimergp
     - goanpeca
+    - jaimergp
