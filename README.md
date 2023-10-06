@@ -3,11 +3,13 @@ About brighteyes-ism-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/brighteyes-ism-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/VicidominiLab/brighteyes-ism
+Home: https://pypi.org/project/brighteyes-ism
 
 Package license: GPL-3.0-or-later
 
 Summary: A toolbox for analysing and simulating ISM images
+
+Development: https://github.com/VicidominiLab/brighteyes-ism
 
 Current build status
 ====================
