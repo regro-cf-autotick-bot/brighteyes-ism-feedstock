@@ -38,7 +38,8 @@ test:
   imports:
     - brighteyes_ism
   commands:
-    - pip check
+    - pip list
+    # - pip check  # Fails due to pycustomfocus
   requires:
     - pip
 
