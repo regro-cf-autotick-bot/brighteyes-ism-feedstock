@@ -34,7 +34,7 @@ requirements:
     - statsmodels
     - tqdm
 
- test:
+test:
   imports:
     - brighteyes_ism
   commands:
