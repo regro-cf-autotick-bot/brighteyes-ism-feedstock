@@ -26,7 +26,7 @@ requirements:
     - matplotlib-scalebar
     - numpy
     - poppy
-    - pycustomfocus  # ==2.3 ?
+    - pycustomfocus <=2.3  # See: https://github.com/VicidominiLab/BrightEyes-ISM/issues/3
     - python >=3.7
     - scipy
     - scikit-image
@@ -39,7 +39,7 @@ test:
     - brighteyes_ism
   commands:
     - pip list
-    # - pip check  # Fails due to pycustomfocus
+    - pip check
   requires:
     - pip
 
