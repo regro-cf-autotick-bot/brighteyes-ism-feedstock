@@ -1,5 +1,5 @@
 {% set name = "brighteyes-ism" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brighteyes-ism-{{ version }}.tar.gz
-  sha256: aa80f3341917f6db58828d8dfe846e7d5f8c93255a7e5eae73118ab78a0b4beb
+  sha256: 3d11af860416c7d2cd93ae7d28a398fae5a0c7a50cdbf92b8ebb1270641d5040
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - matplotlib-scalebar
     - numpy
     - poppy
-    - pycustomfocus
+    - pycustomfocus <=2.3  # See: https://github.com/VicidominiLab/BrightEyes-ISM/issues/3
     - python >=3.7
     - scipy
     - scikit-image
@@ -39,7 +39,7 @@ test:
     - brighteyes_ism
   commands:
     - pip list
-    # - pip check  # Fails due to pycustomfocus
+    - pip check
   requires:
     - pip
 
